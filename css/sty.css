@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Pacifico-Regular" ;
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PTSansCaption-Bold";
+    src: url(../fonts/PT_Sans_Caption/PTSansCaption-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Righteous-Regular";
+    src: url(../fonts/Righteous/Righteous-Regular.ttf);
+}
+
+
+
+
+body{
+
+    background-color: #F7ECDE;
+}
+
+
+h1{
+    font-family: "Pacifico-Regular" ;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+
+
+
+h1::before{
+    content: "";
+    width: 210px;
+    height: 15px;
+    background-color: #FEC260;
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    z-index: -1;
+
+}
+
+
+
+
+h2{
+    font-family: "Righteous-Regular";  
+    font-size: 25px;
+   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+label{
+
+    font-family: "PTSansCaption-Bold";
+  
+}
+
+
+
+
+
+
+
+
+
+
+.inputs .container{
+
+    border-top: 2px black dotted;
+    border-bottom: 2px black dotted;
+}
+
+.inputs button{
+    width: 150px;
+}

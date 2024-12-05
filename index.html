@@ -33,14 +33,23 @@
         <h2 class="text-center pb-4"><span><i class="fa-solid fa-bookmark me-2"></i></span>Bookmark your favorite
           sites<span><i class="fa-solid fa-bookmark ms-2"></i></span></h2>
 
+        <!-- site name input -->
+
         <div class="mb-3">
           <label for="BookMarkName" class="form-label"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
-          <input type="text" class="form-control" id="BookMarkName" placeholder="Bookmark Name">
+          <input type="text" oninput="validation(  this , 'msgName'  )" class="form-control" id="BookMarkName"
+            placeholder="Bookmark Name">
+          <p class="alert alert-danger d-none" id="msgName">Please write at least one letter or two words with only one
+            space between them</p>
         </div>
+
+        <!-- site url input -->
 
         <div class="mb-3">
           <label for="WebsiteURL" class="form-label"><i class="fa-solid fa-link me-2"></i>Site URL</label>
-          <input type="email" class="form-control" id="WebsiteURL" placeholder="Website URL">
+          <input type="email" oninput="validation(  this , 'msgUrl'  )" class="form-control" id="WebsiteURL"
+            placeholder="Website URL">
+          <p class="alert alert-danger d-none" id="msgUrl">invalid</p>
         </div>
 
 
@@ -57,7 +66,7 @@
       <div class="container pt-4 px-0">
 
         <input oninput="searchByName()" id="search" type="search" class="form-control w-50 mx-auto my-4"
-        placeholder="Search by name...">
+          placeholder="Search by name...">
 
         <table class="table  text-center">
           <thead>
